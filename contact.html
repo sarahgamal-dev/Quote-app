@@ -7,20 +7,17 @@
     <title>Weather</title>
     <link rel="stylesheet" href="./../css/all.min.css">
     <link rel="stylesheet" href="./../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../css/style1.css">
+    <link rel="stylesheet" href="./../css/style2.css">
     <link rel="stylesheet" href="./../css/media.css">
 </head>
 
 <body>
-
-    <!-- start navbar -->
-
     <nav class="navbar navbar-expand-lg bg-dark  z-3 d-flex justify-content-center align-items-center" id="navbarr">
         <div class="container">
             <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
                 <img src="./../img/logo@2x.png" alt="Logo" width="60" class="d-inline-block align-text-top">
                 <div class="content ms-1">
-                    <h6 class="text-white mt-3 ">Weather</h6>
+                    <h6 class="text-white mt-3 ">Company name</h6>
                     <p class="text-white ">tagline goes here</p>
                 </div>
             </a>
@@ -30,8 +27,8 @@
           </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-0 me-5  ">
-                    <li class="nav-item  main-li  ">
-                        <a class="nav-link text-info    mx-3  a-nav active" href="#home ">Home</a>
+                    <li class="nav-item  nav-li  ">
+                        <a class="nav-link      mx-3  a-nav" href="./index.html ">Home</a>
                     </li>
                     <li class="nav-item nav-li ">
                         <a class="nav-link    mx-3  a-nav" href="#news ">News</a>
@@ -42,97 +39,81 @@
                     <li class="nav-item nav-li ">
                         <a class="nav-link    mx-3  a-nav" href="#photos ">Photos</a>
                     </li>
-                    <li class="nav-item nav-li ">
-                        <a class="nav-link    mx-3  a-nav" href="./contact.html ">Contact</a>
+                    <li class="nav-item  main-li">
+                        <a class="nav-link  text-info   mx-3  a-nav active" href="#contact ">Contact</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <!-- end navbar -->
 
 
-    <section class="searching">
+
+    <section class="bg-dark contact">
         <div class="container">
-            <form action="javascript:void(0)">
-                <input type="text" placeholder="Find your Location..." class="m-auto" id="searchInput">
-                <button type="button" id="searchBtn">Find</button>
-            </form>
-        </div>
-    </section>
+            <div class="crumb">
+                <a href="./index.html" class="text-decoration-none">Home</a>
+                <span>&rightarrow;</span>
+                <span class="word-contant">Contact</span>
+            </div>
 
-    <section class="forecast-board p-5">
-        <div class="container container-md-fluid">
-            <div class="row forecast-container">
-
-                <!-- today-->
-                <div class="forecast-today col-md-12 col-lg-4">
-                    <div class="header-today ">
-                        <div class="day  float-start" id="today-day"></div>
-                        <div class="date float-end " id="today-date"></div>
-                    </div>
-                    <div class="clear"></div>
-
-                    <div class="content-today">
-                        <div class="city" id="today-city"></div>
-                        <div class="degree-today" id="today-degree">&deg;C</div>
-                    </div>
-
-                    <div class="forecast-icon">
-                        <img id="today-icon" src="" alt="">
-                    </div>
-
-                    <div class="custom-today" id="today-condition"></div>
-
-                    <span><img src="./../img/icon-compass@2x.png" alt=""> <span id="today-wind-dir">East</span></span>
-                    <span><img src="./../img/icon-umberella@2x.png" alt=""> <span id="today-rain">20%</span></span>
-                    <span><img src="./../img/icon-wind@2x.png" alt=""> <span id="today-wind">18km/h</span></span>
-                </div>
-
-                <!--tomorrow-->
-                <div class="forecast-tomorrow col-md-12 col-lg-4">
-                    <div class="header-today">
-                        <div class="day" id="tomorrow-day"></div>
-                    </div>
-
-                    <div class="forecast-content d-flex flex-column justify-content-center align-items-center">
-                        <div class="forecast-icon">
-                            <img id="tomorrow-icon" src="" alt="" width="48">
+            <div class="boxes p-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 box1 rounded-2 ">
+                            <div class="map"></div>
+                            <div class="info mb-3">
+                                <address class="d-flex ">
+                                <i class="fa-solid fa-location-dot text-info"></i> 
+                                    <p class="ms-3 mt-0">Company Name INC <br> 2803 Avenue Street, Los Angeles</p>
+                                
+                                </address>
+                                <a href="" class="text-decoration-none "><i class="fa-solid fa-phone text-info"></i> +1 800 314 235</a>
+                                <a href="" class="ms-3 text-decoration-none "><i class="fa-solid fa-envelope text-info"></i> contact@companyname.com</a>
+                            </div>
                         </div>
-                        <div class="degree" id="tomorrow-degree">&deg;C</div>
-                        <small id="tomorrow-min">&deg;C</small>
-                        <div class="custom" id="tomorrow-condition"></div>
-                    </div>
-                </div>
+                        <div class="col-lg-6 offset-1 box2">
+                            <h1 class="box2-title text-white ">Contact us</h1>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="your name...">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Email address...">
+                                    </div>
 
-                <!-- after-->
-                <div class="forecast col-md-12 col-lg-4">
-                    <div class="header-today">
-                        <div class="day" id="after-day"></div>
-                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Company name...">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="website...">
+                                    </div>
 
-                    <div class="forecast-content d-flex flex-column justify-content-center align-items-center">
-                        <div class="forecast-icon">
-                            <img id="after-icon" src="" alt="" width="48">
+                                </div>
+                                <textarea name="" placeholder="Message..."></textarea>
+                                <!-- text end -->
+                                <div class="button text-end"> <button type="submit">submit</button></div>
+
+                            </div>
                         </div>
-                        <div class="degree" id="after-degree">&deg;C</div>
-                        <small id="after-min">&deg;C</small>
-                        <div class="custom" id="after-condition"></div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
 
+    </section>
 
 
     <footer class="p-5 footer">
 
         <div class="container container-md-fluid">
             <div class="row">
-                <div class="col-lg-8 col-md-12">
+                <div class="col-lg-8 ">
                     <form action="" class="subscribe">
                         <input type="text" placeholder="Enter your email to subscribe..." class="">
                         <button type="submit">Subcribe</button>
@@ -157,19 +138,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="./../js/bootstrap.bundle.min.js "></script>
-    <script src="./../js/main.js "></script>
 
 </body>
 
